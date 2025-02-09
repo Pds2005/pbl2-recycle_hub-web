@@ -49,6 +49,8 @@
             if (password !== confirmPassword) {
                 alert("Passwords do not match!");
             } else {
+                localStorage.setItem("userEmail", document.getElementById("signupEmail").value);
+                localStorage.setItem("userPassword", password);
                 alert("Signup successful! Redirecting to login...");
                 showLogin();
             }
@@ -56,7 +58,22 @@
 
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault();
-            alert("Login successful! Redirecting to dashboard...");
+            const loginEmail = document.getElementById("loginEmail").value;
+            const loginPassword = document.getElementById("loginPassword").value;
+            const storedEmail = localStorage.getItem("userEmail");
+            const storedPassword = localStorage.getItem("userPassword");
+            
+            if (loginEmail === storedEmail && loginPassword === storedPassword) {
+                alert("Login successful! Redirecting to dashboard...");
+                window.location.href = "dashboard.html";
+            } else {
+                alert("Invalid email or password!");
+            }
+        });
+
+        // Responsive handling
+        window.addEventListener("resize", function() {
+            document.body.style.height = window.innerHeight + "px";
         });
     </script>
 </body>
