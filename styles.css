@@ -1,52 +1,122 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-.auth-container {
-    background: white;
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #27ae60;
+    color: white;
+}
+
+/* Upload Section */
+.upload-section {
+    text-align: center;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 300px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 20px;
     text-align: center;
 }
 
-h2 {
-    margin-bottom: 20px;
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-input {
-    width: 100%;
+.steps div {
+    background: white;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.steps img {
+    width: 150px;
+    height: auto;
     border-radius: 5px;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background: #28a745;
+/* Rewards and Donation Section */
+.rewards-donation {
+    text-align: center;
+    padding: 30px;
+    background: #ecf0f1;
+}
+
+.rewards-donation h2 {
+    color: #2980b9;
+}
+
+.rewards-donation p {
+    font-size: 18px;
+}
+
+.rewards-donation button {
+    background: #e67e22;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover {
-    background: #218838;
+.rewards-donation button:hover {
+    background: #d35400;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
+/* Educational Section */
+.education {
+    text-align: center;
+    padding: 30px;
+    /* background: #d35400; */
 }
 
-a:hover {
-    text-decoration: underline;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
 }
+
