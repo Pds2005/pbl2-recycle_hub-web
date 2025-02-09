@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Recycling Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Recycle & Earn</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+                <li><a href="#rewards">Track Your Rewards</a></li>
+                <li><a href="#know-more">Know More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Recycle Plastic & Earn Rewards!</h2>
+        <p>Upload plastic waste images, get them collected, and earn shopping coupons.</p>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <h2>Upload Your Plastic Waste</h2>
+        <input type="file" accept="image/*" id="fileInput">
+        <p id="fileName"></p>
+        <button onclick="submitFile()" style="width: 100px; height: 30px; border-radius: 7%; background-color: #df610d; border-color: #e16513;">Submit</button>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div>
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2021/12/29/Upload-Logo-Graphics-22574991-1.jpg" alt="Upload Plastic Waste">
+                <h3>Upload Plastic Waste</h3>
+            </div>
+            <div>
+                <img src="https://c8.alamy.com/comp/2BHHG9D/people-collect-and-recycle-garbage-vector-recycle-waste-plastic-illustration-of-ecology-cleaning-volunteer-throw-and-collecting-trash-2BHHG9D.jpg" alt="We Collect & Recycle">
+                <h3>We Collect & Recycle</h3>
+            </div>
+            <div>
+                <img src="https://static.vecteezy.com/system/resources/previews/005/611/490/non_2x/earn-point-concept-loyalty-program-and-get-rewards-suitable-for-web-landing-page-ui-mobile-app-banner-template-flat-style-cartoon-illustration-vector.jpg" alt="Earn Rewards">
+                <h3>Earn Rewards</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards and Donation Section -->
+    <section class="rewards-donation" id="rewards">
+        <h2>Your Rewards</h2>
+        <p>You have earned <span id="rewardPoints">0</span> reward points!</p>
+        <button onclick="redeemRewards()">Redeem Rewards</button>
+        
+        <h2>Support Environmental Efforts</h2>
+        <p>Donate to help make a bigger impact on environmental sustainability.</p>
+        <button onclick="donateNow()">Donate Now</button>
+    </section>
+
+    <!-- Educational Section -->
+    <section class="education" id="know-more">
+        <h2>Why Recycling Matters?</h2>
+        <p>Learn how plastic waste is transformed into valuable products and helps the environment.</p>
+        <button onclick="showTransformation()" style="background-color: #e16513; border: #d35400; border-radius: 5%; width: 150px; height: 35px; color: aliceblue; font-size: 15px;">Learn More</button>
+        <div id="transformation" style="display: none; margin-top: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Municipal_recycling_facilities%2C_Montgomery_County%2C_MD._2007%2C_Credit_USEPA_%2814410405277%29.jpg" alt="Plastic Waste Processing" width="300">
+            <img src="https://energytheory.com/wp-content/uploads/2024/05/Innovative-amp-Useful-Everyday-Products-Made-From-Recycled-Plastic-2-1024x683.png" alt="Recycled Plastic Products" width="300">
+            <p>We collect plastic waste, process it, and turn it into valuable products like reusable materials and eco-friendly goods.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Plastic Recycling Platform. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showTransformation() {
+            document.getElementById('transformation').style.display = 'block';
+        }
+
+        function redeemRewards() {
+            alert("Reward redemption coming soon!");
+        }
+
+        function donateNow() {
+            alert("Donation feature coming soon! Help us make a difference.");
+        }
+    </script>
+</body>
+</html>
